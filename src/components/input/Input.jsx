@@ -13,6 +13,7 @@ export default function Input() {
     setValue(e.target.value);
   };
   const handleSubmit = (e) => {
+    // console.log(value);
     e.preventDefault();
     dispatch(add(value));
     setValue("");
